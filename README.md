@@ -4,8 +4,9 @@
 
 #### In the game, mines are scattered throughout a board, which is divided into cells. Cells have three states: unopened, opened and flagged. An unopened cell is blank and clickable, while an opened cell is exposed. Flagged cells are unopened cells marked by the player to indicate a potential mine location; some implementations make flagged cells inoperable to reduce the risk of uncovering a suspected mine. A player selects a cell to open it. If a player opens a mined cell, the game ends in a loss. Otherwise, the opened cell displays either a number, indicating the number of mines diagonally and/or adjacent to it, or a blank tile (or "0"), and all adjacent non-mined cells will automatically be opened. Players can also flag a cell, visualized by a flag being put on the location, to denote that they believe a mine to be in that place.
 
-![image](https://github.com/Twitty97/minesweeper/assets/126764655/7556cd96-1147-43e1-8627-9cc48ee37a4a)
-![image](https://github.com/Twitty97/minesweeper/assets/126764655/39a5675a-6809-4fc0-a51f-4916d68d9f79)
+![image](https://github.com/Twitty97/minesweeper/assets/126764655/3c9a3eed-79c4-460d-88ab-c701c9381db1)
+![image](https://github.com/Twitty97/minesweeper/assets/126764655/84fbd351-737f-4f4b-b65c-a749611d227a)
+![image](https://github.com/Twitty97/minesweeper/assets/126764655/27914576-530d-4235-8f6a-d4c76a65db49)
 
 #### Game specifications:
 - The default size of the frame is 10x10 with 10 mines (difficulty level: easy). For "medium", the boardsize is set to 15x15 with 15 mines and for "hard" the boardsize is set to 25x25 with 25 mines respectively.
