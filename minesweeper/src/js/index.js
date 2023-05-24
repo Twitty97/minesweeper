@@ -87,6 +87,8 @@ export class MinesweeperGame {
     if(localStorage.getItem('array') !== null) {
       storeResult.tableGenerate();
       storeResult.loadSavedTable();
+    } else {
+      storeResult.tableGenerate();
     }
   };
 
