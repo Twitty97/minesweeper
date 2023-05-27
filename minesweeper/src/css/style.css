@@ -46,7 +46,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: 0 auto;
+  align-content: center;
   text-align: center;
   flex-direction: row;
   padding: 0px 5px;
@@ -59,28 +59,31 @@ body {
 /* info-section */
 
 .info {
-  padding: 20px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
 }
 
 .info__title,
 .info__rules {
   text-align: center;
-  padding-bottom: 10px;
 }
 
 .info__wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  margin: 0 auto;
-  padding-bottom: 10px;
+  column-gap: 30px;
 }
 
 .reset-btn,
 .table-btn,
-.sound-btn {
+.sound-btn,
+.submit-btn {
   align-items: center;
   background-clip: padding-box;
   border: 1px solid transparent;
@@ -102,19 +105,22 @@ body {
 .reset-btn:focus,
 .table-btn:hover,
 .table-btn:focus,
-.sound-btn:focus {
+.sound-btn:focus,
+.submit-btn:focus {
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
 .reset-btn:hover,
 .table-btn:hover,
-.sound-btn:hover {
+.sound-btn:hover,
+.submit-btn:hover {
   transform: translateY(-1px);
 }
 
 .reset-btn:active,
 .table-btn:active,
-.sound-btn:active {
+.sound-btn:active,
+.submit-btn:active {
   box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
   transform: translateY(0);
 }
@@ -181,8 +187,10 @@ body {
 
 .gameboard {
   display: flex;
+  flex-direction: column-reverse;
+  row-gap: 20px;
   justify-content: center;
-  padding: 20px 0;
+  align-items: center;
 }
 
 .gameboard__container {
@@ -194,9 +202,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 50px;
+  column-gap: 20px;
   font-weight: 600;
-  padding-top: 20px;
 }
 
 .result__title {
@@ -271,7 +278,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   column-gap: 30px;
   text-align: center;
@@ -423,14 +430,39 @@ body {
   align-items: center;
   text-align: center;
   column-gap: 10px;
-  padding-top: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .dropdown__content {
     left: 15%;
     right: 15%;
   }
+  .container {
+    row-gap: 50px;
+  }
+}
+
+/* mines */
+
+.info__mines {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+}
+
+.mines__input {
+  background-color: #E7E9EB;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #eee;
+  outline: none;
+}
+
+.mines__input::placeholder {
+  opacity: 0.5;
 }
 
 /*  classes to switch between themes */

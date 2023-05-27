@@ -5,7 +5,7 @@ export default {
     contentWrapper: null,
     wrapperTitle: null,
     closeIcon: null,
-    contentLine: null,
+    contentLine: null
   },
   store: {
     counter: 0,
@@ -17,7 +17,6 @@ export default {
     this.elements.dropdownButton = document.querySelector('.table-btn');
     this.elements.closeIcon = document.querySelector('.fa-x');
     this.elements.dropdownContent = document.querySelector('.dropdown__content');
-    this.elements.bodyElement = document.querySelector('.body');
 
     this.elements.dropdownButton.addEventListener('click', (event) => {
       this.elements.dropdownContent.classList.add('show-content');

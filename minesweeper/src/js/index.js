@@ -87,8 +87,6 @@ export class MinesweeperGame {
     if(localStorage.getItem('array') !== null) {
       storeResult.tableGenerate();
       storeResult.loadSavedTable();
-    } else {
-      storeResult.tableGenerate();
     }
   };
 
@@ -339,7 +337,6 @@ export class Cell {
   }
 
   renderLoadedCell () {
-    console.log('trying to load saved');
     let counter = 0;
     for (let i = 0; i < game.grid.length; i++) {
       for (let j = 0; j < game.grid[i].length; j++) {

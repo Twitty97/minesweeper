@@ -40,7 +40,7 @@ export default {
     resultTitle: null,
     resultScore: null,
     buttonSoundIcon: null,
-    soundIcon: null
+    soundIcon: null,
   },
 
   checkLevel: {
@@ -71,8 +71,8 @@ export default {
     this.elements.main.appendChild(this.elements.container);
     this.elements.infoSection = document.createElement('section');
     this.elements.container.appendChild(this.elements.infoSection);
-    this.elements.infoTitle = document.createElement('h4');
-    this.elements.infoRules = document.createElement('h5');
+    this.elements.infoTitle = document.createElement('h3');
+    this.elements.infoRules = document.createElement('h4');
     this.elements.infoSection.appendChild(this.elements.infoTitle);
     this.elements.infoSection.appendChild(this.elements.infoRules);
     this.elements.infoWrapper = document.createElement('div');
@@ -135,7 +135,7 @@ export default {
     this.elements.switchIndicator = document.createElement('div');
     this.elements.levelSwitch.appendChild(this.elements.switchIndicator);
     this.elements.containerFill = document.createElement('div');
-    this.elements.infoSection.appendChild(this.elements.containerFill);
+    this.elements.gameBoard.appendChild(this.elements.containerFill);
     this.elements.fillClicks = document.createElement('span');
     this.elements.spanClicks = document.createElement('span');
     this.elements.fillTime = document.createElement('span');
@@ -144,6 +144,7 @@ export default {
     this.elements.containerFill.appendChild(this.elements.spanClicks);
     this.elements.containerFill.appendChild(this.elements.fillTime);
     this.elements.containerFill.appendChild(this.elements.spanTime);
+
     this.elements.gameResultContainer = document.createElement('div');
     this.elements.infoSection.appendChild(this.elements.gameResultContainer);
     this.elements.resultTitle = document.createElement('span');
@@ -232,7 +233,7 @@ export default {
     // add text
 
     this.elements.infoTitle.textContent = 'Minesweeper';
-    this.elements.infoRules.textContent = 'Instructions: use LEFT CLICK to reveal a cell, RIGHT CLICK to put a flag.';
+    this.elements.infoRules.textContent = 'Instructions: use left click to reveal a cell, right click to flag a cell.';
     this.elements.resetButton.textContent = 'Reset Game';
     this.elements.dropdownButton.textContent = 'Results Table';
     this.elements.wrapperTitle.textContent = 'Latest scores';
